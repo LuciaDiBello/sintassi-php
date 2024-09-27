@@ -1,0 +1,19 @@
+//stampare la stringa di lunghezza massima
+
+<?php
+
+$arrString = [
+    "abcde" => 5,
+    "abcdef" => 6,
+    "abcdefgh" => 8
+];
+
+$lmax = max($arrString);
+
+foreach ($arrString as $str => $l) {
+    if ($l == $lmax) {
+        echo $str . " ";
+    }
+}
+
+?>

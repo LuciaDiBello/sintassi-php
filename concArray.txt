@@ -1,0 +1,12 @@
+//Dati due vettori A e B, creare un terzo vettore con gli elementi di A e B
+
+<?php
+
+$A = [1, 2, 3];
+$B = [4, 5, 6];
+$C = $A + $B;  //concatenazione di vettori
+
+for ($i = 0; $i < count($C); $i++) {
+       echo $C[$i] . " ";
+}
+?>

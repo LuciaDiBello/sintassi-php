@@ -1,0 +1,12 @@
+//Stampare gli elementi pari di un array
+
+<?php
+
+$arr = [1, 2, 3, 4, 5];
+
+foreach ($arr as $x){
+  if ($x % 2 == 0)
+        echo $x . " ";
+}
+
+?>

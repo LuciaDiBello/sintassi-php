@@ -1,0 +1,27 @@
+// Data una matrice di numeri casuali, trovare la riga con la somma massima
+
+<?php
+
+$dim = 6;
+for($i = 0; $i < $dim; $i++) 
+	for($j = 0; $j < $dim; $j++)
+		$matr[$i][$j] = rand(0,50);
+	
+$smax=0;
+$posmax=0;
+for($j=0; $j<$dim; $j++)
+       $smax = $smax + $matr[0][$j];
+	
+for($i=1; $i<$dim; $i++) {
+        $si = 0;
+        for($j=0; $j<$dim; $j++) 
+             $si = $si + $matr[$i][$j];
+        if($si > $smax){
+             $smax = $si;
+             $posmax = $i;
+        }
+    }
+    	
+echo "La riga con somma massima è: " . $posmax . " , la somma massima è: " . $smax;
+
+?>

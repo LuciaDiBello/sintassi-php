@@ -1,0 +1,24 @@
+//Dato un array, calcolare la media degli elementi
+
+<?php
+
+$arr = [];
+$s = 0;
+$c = 0;
+ 
+do {
+    $input = readline("Inserisci un numero intero (0 per terminare): ");
+    $x = intval($input);  
+    if ($x != 0) {
+        $arr[] = $x;
+        $s = $s + $x;
+        $c++;
+    }
+} while ($x != 0);
+
+for ($i=0; $i<$c; $i++)
+	echo $arr[$i] . " ";
+
+$media = $s / $c;
+echo "La media degli elementi è: " . $media;
+?>

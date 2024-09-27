@@ -1,0 +1,10 @@
+<?php
+
+function somma($x, $y) {
+    return $x + $y;
+}
+
+$ris = somma(5, 6);
+echo "La somma è: " . $ris;
+
+?>

@@ -1,0 +1,15 @@
+//Verificare se una stringa ha una lunghezza inferiore a 8 caratteri, 
+//compresa tra 8 e 15 caratteri o superiore a 15 caratteri
+
+<?php
+$stringa = "php";
+
+if (strlen($stringa) < 8) {
+    echo "La stringa ha meno di 8 caratteri.";
+} elseif (strlen($stringa) >= 8 && strlen($stringa) <= 15 ) {
+    echo "La stringa ha una lunghezza compresa tra 8 e 15 caratteri.";
+} else {
+    echo "La stringa ha più di 15 caratteri.";
+}
+
+?>
