@@ -1,0 +1,18 @@
+<?php
+
+function upperCaseStr($arrString) {
+    $ris = [];
+    foreach ($arrString as $str) {
+        $ris[] = strtoupper($str);
+    }
+    return $ris;
+}
+
+$arrString = ["stringa1", "stringa2", "stringa3", "stringa4","stringa5", "stringa6"];
+$ris = upperCaseStr($arrString);
+echo "Stringhe in maiuscolo: ";
+foreach ($ris as $s) {
+       echo $s . " ";
+    }
+
+?>

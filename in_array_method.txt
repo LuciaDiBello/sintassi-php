@@ -1,0 +1,14 @@
+<?php
+
+$arrString = array("stringa1", "stringa2", "stringa3", "stringa4", "stringa5", "stringa6");
+
+if (in_array("stringa6", $arrString))
+  {
+  echo "elemento presente nell'array";
+  }
+else
+  {
+  echo "elemento non trovato";
+  }
+
+?>

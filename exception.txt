@@ -1,0 +1,16 @@
+<?php
+
+function divisione($num, $den) {
+    if ($den == 0) {
+        throw new Exception("Divisione per zero.");
+    }
+    return $num / $den;
+}
+
+try {
+    echo divisione(8, 0);
+} catch (Exception $e) {
+    echo "Errore: " . $e->getMessage(); // Stampa Errore: Divisione per zero
+}
+
+?>

@@ -1,0 +1,7 @@
+<?php
+$arrAss = array("strKey1" => "strValue1", "strKey2" => "strValue2", "strKey3" => "strValue3", "strKey4" => "strValue4", "strKey5" => "strValue5");
+
+sort($arrAss);
+
+print_r($arrAss);
+?>

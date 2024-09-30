@@ -1,0 +1,14 @@
+<?php
+
+session_start();
+
+$_SESSION['username'] = 'nome';
+
+if (!isset($_SESSION['username'])){
+    echo "Non loggato"; 
+}
+else {
+   echo "Benvenuto ".$_SESSION[username] . "'";
+}
+
+?>

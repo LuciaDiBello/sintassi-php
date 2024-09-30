@@ -1,0 +1,14 @@
+//operazioni binarie
+
+<?php
+
+$x = 126;
+$y = 85;
+var_dump(decbin($x & $y));
+var_dump(decbin($x | $y));
+var_dump(decbin($x ^ $y));
+var_dump(decbin(~$x));
+var_dump(decbin($x << 1));
+var_dump(decbin($y >> 2));
+
+?>
