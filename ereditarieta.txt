@@ -1,0 +1,41 @@
+<?php
+
+class FigGeom {
+    public function Perimetro() {
+        return 0;
+    }
+}
+
+class Quadrato extends FigGeom {
+    private $lato;
+
+    public function __construct($lato) {
+        $this->lato = $lato;
+    }
+
+    public function Perimetro() {
+        return 4 * $this->lato;
+    }
+}
+
+class Rettangolo extends FigGeom {
+    private $base;
+    private $altezza;	
+
+    public function __construct($base, $altezza) {
+        $this->base = $base;
+        $this->altezza = $altezza;
+    }
+
+    public function Perimetro() {
+        return 2 * ($this->base * $this->altezza);
+    }
+}
+
+$q = new Quadrato(5);
+echo $q->Perimetro(); 
+
+$r = new Rettangolo(8,5);
+echo $r->Perimetro(); 
+
+?>

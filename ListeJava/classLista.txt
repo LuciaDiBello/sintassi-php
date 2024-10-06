@@ -1,0 +1,33 @@
+package it.listajava;
+
+public class Lista {
+  
+   private Nodo testa = null;
+   private int size = 0;
+
+// aggiunge in coda
+   public void aggiungi(int i) {
+    if (size == 0){
+         testa = new Nodo (i, null);
+         size++;
+        }else {
+        Nodo nodoCorrente = testa;
+	    for (int j = 1; j < size; j++){
+   		    nodoCorrente = nodoCorrente.getNext();
+            }
+        Nodo nuovo = new Nodo(i, null);  
+        nodoCorrente.setNext(nuovo);
+        size++;
+          }
+        }
+    
+    public int getSize() {
+	      return size;
+       }
+
+    public void setSize(int size) {
+	     this.size = size;
+       }
+}
+
+

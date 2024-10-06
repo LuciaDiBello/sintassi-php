@@ -1,0 +1,31 @@
+package it.listajava;
+
+public class Nodo {
+	   private int x;
+	   private Nodo next;
+
+	   public Nodo(int x, Nodo next) {
+	       this.x = x;
+	       this.next = next;
+	     }
+	   
+	  public int getX() {
+	     return x;
+	     }
+	 
+	  public void setValore(int x) {
+	      this.x = x;
+	       }
+	  
+	   public Nodo getNext() {
+	     return next;
+	     }
+	 
+	  public void setNext(Nodo next) {
+	      this.next = next;
+	       }
+	}
+
+
+
+
