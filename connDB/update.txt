@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Connessione database </title>
+</head>
+<body>
+   <?php
+      $conn = new mysqli ("localhost", "root", "", "gestione");
+      if ($conn->connect_error){
+         die("Errore di connessione: " . $conn->connect_error);
+       }
+    
+       $update_sql = "UPDATE tab SET nome = 'Calogero' where id = '5'";
+       if ($conn->query($update_sql) === true){
+    	    echo "riga aggiornata con successo";
+  	    }else{
+    	          echo "errore: " . $conn->error;
+		 }
+      
+       $conn -> close();
+    ?>
+</body>
+</html>
