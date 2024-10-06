@@ -1,0 +1,23 @@
+<?php
+
+$doc = 'documento.txt';
+
+$file = fopen($doc, 'w');
+
+$testo = "abcdef";
+
+fwrite($file, $testo);
+
+fclose($file);
+
+echo "Il file $doc è stato creato con successo";
+
+$file = fopen($doc, 'r');
+
+$testo = fread($file, filesize($doc));
+
+fclose($file);
+
+echo "Testo del file: " . $testo;
+
+?>
