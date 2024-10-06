@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserimento dati</title>
+    <style>
+      form {
+           display: flex;
+           flex-direction: column;
+	   width: 180px;
+           margin: auto;
+            }
+      label {
+            margin-top: 8px;
+            }
+      input{
+            margin: 8px 0;
+           }
+   </style>
+ </head>
+
+<body>
+  <h2 align=center> Inserimento dei dati nel database</h2>
+  <form method = "POST" action = "query.php">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Inserisci nome">
+      <label for="cognome">Cognome</label>
+      <input type="text" id="cognome" name="cognome" placeholder="Inserisci cognome">
+      <input type="submit" value="Invia dati">
+  </form>
+ </body>
+</html>
